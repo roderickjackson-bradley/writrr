@@ -27,10 +27,10 @@ Once at the Writrr's outpost(Oeuvre), the user can rate the original content, en
 
 ## Requirements
 ---
-Django 2.0+
-Python 3.7+
-JQuery
-Materialize
+- Django 2.0+
+- Python 3.7+
+- JQuery
+- Materialize
 
 ## Blog Tasks List Story Time line 
 ---
