@@ -14,8 +14,12 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 from django.contrib import admin
-from django.urls import path
+from django.urls import path, include
+from opus import views as opus_views
+
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('opus/', opus_views.list_opus, name="list_opus"),
+    path('opus/', include('opus.urls', namespace='opus')),
 ]

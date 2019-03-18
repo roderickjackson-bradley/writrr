@@ -1,0 +1,11 @@
+{% extends 'opus/base.html' %}
+
+{% block title %}{{ contentpost.title }}{% endblock %}
+
+{% block content %}
+  <h1>{{ contentpost.title }}</h1>
+  <p>
+    Published {{ contentpost.publish }} by {{ contentpost.author }}
+  </p>
+  {{ contentpost.body|linebreaks }}
+{% endblock %}

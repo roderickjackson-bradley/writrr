@@ -1,0 +1,18 @@
+{% extends 'opus/base.html' %}
+
+{% block title %} My Blog {% endblock %}
+
+{% block content %}
+  <h1>My Blog</h1>
+    {% for contentpost in contentposts %}
+    <h2>
+      <a href="{{ contentpost.get_absolute_url }}">
+        {{ contentpost.title }}
+      </a>
+    </h2>
+    <p>
+      Published {{ contentpost.publish }} by {{ contentpost.author }}
+    </p>
+      {{ contentpost.body }}
+    {% endfor %}
+{% endblock %}
