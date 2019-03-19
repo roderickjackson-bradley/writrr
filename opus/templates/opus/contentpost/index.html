@@ -13,6 +13,7 @@
     <p>
       Published {{ contentpost.publish }} by {{ contentpost.author }}
     </p>
-      {{ contentpost.body }}
+      {{ contentpost.body|truncatewords:30|linebreaks  }}
     {% endfor %}
+    {% include "opus/pagination.html" with page=contentposts %}
 {% endblock %}
