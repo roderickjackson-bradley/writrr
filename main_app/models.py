@@ -17,7 +17,7 @@ class Readrr (models.Model):
     bio = models.TextField(max_length=250)
     joined = models.DateField('Joined Date')
     email = models.CharField(max_length=100)
-
+#Making a change
     def __str__(self):
         return self.name
     
