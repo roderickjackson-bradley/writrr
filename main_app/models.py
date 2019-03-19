@@ -13,28 +13,29 @@ Rating = (
 )
 
 class Readrr (models.Model):
-    name = models.CharField(max_length=50)
+    caption = models.CharField(max_length=50)
     bio = models.TextField(max_length=250)
-    joined = models.DateField('Joined Date')
+    created = models.DateField('Date Posted')
     email = models.CharField(max_length=100)
+    user = models.ForeignKey(User, on_delete=models.CASCADE)
 
     def __str__(self):
-        return self.name
+        return self.caption
     
     def get_absolute_url(self):
         return reverse('readrrs_detail', kwargs={'pk': self.id})
 
 
 class Writrr(models.Model):
-    name = models.CharField(max_length=100)
+    title = models.CharField(max_length=100)
     email = models.CharField(max_length=100)
     bio = models.TextField(max_length=250)
-    joined = models.DateField('Joined Date')
+    created = models.DateField('Published Date')
     readrrs = models.ManyToManyField(Readrr)
     user = models.ForeignKey(User, on_delete=models.CASCADE)
 
     def __str__(self):
-        return self.name
+        return self.title
 
     def get_absolute_url(self):
         return reverse ('detail', kwargs={'writrr_id' : self.id}) 
@@ -52,7 +53,7 @@ class Comment(models.Model):
     readrr = models.ForeignKey(Readrr, on_delete=models.CASCADE)
 
     def __str__(self):
-        return f"{self.get_service_display()} on {self.date}"
+        return f"{self.get_review_display()} on {self.created}"
     
     class Meta:
         ordering = ['-created']
