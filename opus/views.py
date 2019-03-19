@@ -28,3 +28,5 @@ class ContentPostListView(ListView):
   context_object_name = 'contentpost'
   paginate_by = 3
   template_name = 'opus/contentpost/index.html'
+
+  
