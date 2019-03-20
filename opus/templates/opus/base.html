@@ -14,16 +14,31 @@
     </head>
 
     <body>
-      <nav>
-        <div class="nav-wrapper">
-          <a href="#" class="brand-logo">Logo</a>
-          <ul id="nav-mobile" class="right hide-on-med-and-down">
-            <li><a href="sass.html">Sass</a></li>
-            <li><a href="badges.html">Components</a></li>
-            <li><a href="collapsible.html">JavaScript</a></li>
-          </ul>
-        </div>
-      </nav>
+    <header>
+        <nav>
+          <div class="nav-wrapper">
+            <a href="#" class="brand-logo">Logo</a>
+            {% if request.user.is_authenticated %}
+            <div class="right hide-on-med-and-down">
+              <ul class="menu">
+                <li {% if section == "dashoboard" %}class="selected"{% endif %}>
+                  <a href="{% url "dashboard" %}">My Dashboard</a>
+                </li>
+              </ul>
+              {% endif %}
+
+              <span class="right hide-on-med-and-down">
+                {% if request.user.is_authenticated %}
+                  Hello {{ request.user.first_name }},
+                  <a href="{% url "logout" %}">Logout</a>
+                {% else %}
+                  <a href="{% url "login" %}">Log-in</a>
+                {% endif %}
+              </span>
+            </div>
+          </div>
+        </nav>
+      <header>
       <div class="container">
         {% block content %} {% endblock %}
       </div>
