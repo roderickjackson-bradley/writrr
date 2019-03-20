@@ -20,7 +20,7 @@ from opus import views as opus_views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('opus/', opus_views.list_opus, name="list_opus"),
+    path('', opus_views.list_opus, name="list_opus"),
     path('opus/', include('opus.urls', namespace='opus')),
     path('account/', include('account.urls')),
 ]
