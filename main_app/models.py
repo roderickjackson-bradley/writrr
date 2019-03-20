@@ -13,24 +13,24 @@ Rating = (
 )
 
 class Readrr (models.Model):
-    caption = models.CharField(max_length=50)
+    name = models.CharField(max_length=50)
     bio = models.TextField(max_length=250)
-    created = models.DateField('Date Posted')
+    date  = models.DateField('Date Posted')
     email = models.CharField(max_length=100)
     user = models.ForeignKey(User, on_delete=models.CASCADE)
 
     def __str__(self):
-        return self.caption
+        return self.name
     
     def get_absolute_url(self):
         return reverse('readrrs_detail', kwargs={'pk': self.id})
 
 
 class Writrr(models.Model):
-    title = models.CharField(max_length=100)
+    name = models.CharField(max_length=100)
     email = models.CharField(max_length=100)
     bio = models.TextField(max_length=250)
-    created = models.DateField('Published Date')
+    date = models.DateField('Published Date')
     readrrs = models.ManyToManyField(Readrr)
     user = models.ForeignKey(User, on_delete=models.CASCADE)
 
@@ -42,7 +42,7 @@ class Writrr(models.Model):
 
 
 class Comment(models.Model):
-    created = models.DateField('Comment Date')
+    date = models.DateField('Comment Date')
     review = models.TextField(max_length=250)
     ratings = models.CharField(max_length=1,
     choices=Rating,
@@ -53,10 +53,10 @@ class Comment(models.Model):
     readrr = models.ForeignKey(Readrr, on_delete=models.CASCADE)
 
     def __str__(self):
-        return f"{self.get_review_display()} on {self.created}"
+        return f"{self.get_review_display()} on {self.date}"
     
     class Meta:
-        ordering = ['-created']
+        ordering = ['-date']
     
 class Opu(models.Model):
     url = models.CharField(max_length=200)

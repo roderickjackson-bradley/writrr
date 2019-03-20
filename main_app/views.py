@@ -35,7 +35,7 @@ def signup(request):
 
 class WritrrCreate (LoginRequiredMixin, CreateView):
     model = Writrr
-    fields = ['title', 'email', 'bio', 'created']
+    fields = ['name', 'email', 'bio', 'date']
 
     def form_valid(self, form):
       # Assign the logged in user
@@ -45,7 +45,7 @@ class WritrrCreate (LoginRequiredMixin, CreateView):
 
 class WritrrUpdate (LoginRequiredMixin, UpdateView):
     model = Writrr
-    fields = ['email', 'title', 'bio']
+    fields = ['email', 'name', 'bio']
 
 class WritrrDelete (LoginRequiredMixin, DeleteView):
     model = Writrr
@@ -129,7 +129,7 @@ class ReadrrCreate(LoginRequiredMixin, CreateView):
 
 class ReadrrUpdate(LoginRequiredMixin, UpdateView):
   model = Readrr
-  fields = ['caption', 'email']
+  fields = ['name', 'email']
 
 class ReadrrDelete(LoginRequiredMixin, DeleteView):
   model = Readrr
