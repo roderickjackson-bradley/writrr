@@ -23,4 +23,6 @@ urlpatterns = [
     path('', opus_views.list_opus, name="list_opus"),
     path('opus/', include('opus.urls', namespace='opus')),
     path('account/', include('account.urls')),
+    path('registration/', include('django.contrib.auth.urls')),
+
 ]
