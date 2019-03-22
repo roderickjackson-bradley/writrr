@@ -1,13 +1,16 @@
+{% load static %}
+  
   <!DOCTYPE html>
   <html>
     <head>
       <!--Import Google Icon Font-->
       <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Bitter" rel="stylesheet">
+
       <!-- Compiled and minified CSS -->
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-
-      {% load static %}
-      <link rel="stylesheet" type="text/css" href="{% static 'users/style.css' %}">
+      <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
 
       <!--Let browser know website is optimized for mobile-->
       <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
@@ -18,12 +21,8 @@
         <nav>
           <div class="nav-wrapper">
 
-            <a href="#" class="brand-logo">writrr.
-                <img src="https://i.imgur.com/WGHUMCxh.png" alt="Writtr">
-            </a>
+            <a href="#" class="brand-logo">writrr.</a>
           </header></img>
-
-
 
             {% if request.user.is_authenticated %}
             <div class="right hide-on-med-and-down">
@@ -49,10 +48,6 @@
       <div class="container">
         {% block content %} {% endblock %}
       </div>
-
-      <footer class="page-footer">
-          <div class="right">All Rights Reserved, &copy; 2019 Rowdy Ruff Boyz,llc. &nbsp;</div>
-        </footer>
 
       <!--JavaScript at end of body for optimized loading-->
       <script type="text/javascript" src="js/materialize.min.js"></script>

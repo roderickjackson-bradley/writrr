@@ -1,8 +1,28 @@
 
-h1 {
-    color:black;
+.nav-wrapper {
+    background-color: #26abf2 !important;
+    color: #f48642;
+    font-size: 12px;
+    font-family: 'pacifico' , cursive;
+    object-fit: contain;
+}
+
+a {
+  object-fit: contain;
+}
+
+h1 a, h2 a {
+    color:#26abf2;
     text-align: inherit;
-    text-outline: #26abf2;
+    text-decoration-color: black;
+    background-color: whitesmoke;
+    font-family: 'Bitter', serif;
+    font-size: 20px;
+    object-fit: contain;
+}
+
+img {
+  border-radius: 50%;
 }
 
 body {
@@ -11,8 +31,11 @@ body {
     flex-direction: column;
     color: #26abf2;
     background-color: #f48642;
-    font-size: 18px;
+    font-size: 14px;
+    font-family: 'bitter', serif;
     white-space: normal;
+    padding-left: 15px;
+    object-fit: contain;
   }
   
   main {
