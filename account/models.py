@@ -1,16 +1,9 @@
+
 from django.db import models
-# from django.contrib.auth.models import AbstractUser
-# from django.conf import settings
+from django.contrib.auth.models import User
 
-# class User(AbstractUser):
-#   is_writrr = models.BooleanField(default=False)
-#   is_readrr = models.BooleanField(default=False)
+class Profile(models.Model):
+  user = models.OneToOneField(User, on_delete=models.DO_NOTHING)
+  follows = models.ManyToManyField('self', related_name='followed_by', symmetrical=False)
 
-# class Writrr(models.Model):
-#   user = models.OneToOneField(settings.AUTH_USER_MODEL, on_delete=models.CASCADE)
-#   avatar = models.ImageField(blank=True)
-#   about = models.TextField(blank=True)
-  
-
-
-# Create your models here.
+  User.profile = property(lambda u: Profile.objects.get_or_create(user=u)[0])
