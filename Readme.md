@@ -94,7 +94,7 @@ https://writrrh.herokuapp.com/registration/login/
 Team Trello:
 https://trello.com/writrr
 
-Pitch Deck:
+Pitch Deck/ User Story presentation
 https://spark.adobe.com/video/gtfrwPk5tGH3W
 
 
