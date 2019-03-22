@@ -2,6 +2,7 @@ from django.shortcuts import render, get_object_or_404
 from .models import ContentPost, Comment
 from .forms import CommentForm
 from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
+from django.views import generic
 from django.views.generic import ListView
 
 
@@ -43,12 +44,9 @@ def magum_opus(request, contentpost):
     comment_form = CommentForm()
     return render(request, 'opus/contentpost/show.html', {'contentpost': contentpost, 'comment': comments, 'new_comment': new_comment, 'comment_form': comment_form})
 
-
-
 class ContentPostListView(ListView):
   queryset = ContentPost.published.all()
   context_object_name = 'contentpost'
   paginate_by = 3
   template_name = 'opus/contentpost/index.html'
 
-  

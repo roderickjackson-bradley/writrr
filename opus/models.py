@@ -1,11 +1,28 @@
 from django.db import models
 from django.utils import timezone
+from datetime import date
 from django.contrib.auth.models import User
 from django.urls import reverse
 
 class PublishedManager(models.Manager):
   def get_query(self):
     return super(PublishedManager, self).get_query().filter(status='published')
+
+# class ContentPostAuthor(models.Model):
+#   user_id      = models.AutoField(primary_key=True)
+#   user         = models.ForeignKey(User, on_delete=models.SET_NULL, null=True)
+#   username     = models.TextField(max_length=25)
+#   about        = models.TextField(max_length=600, help_text="Enter your bio details here.")
+
+  class Meta:
+    ordering = ["user", "about"]
+
+  def get_absolute_url(self):
+      return reverse("contentposts-by-author", args=[str(self.user_id)])
+
+  def __str__(self):
+    return self.username
+  
 
 class ContentPost(models.Model):
   STATUS_CHOICES = (
@@ -14,7 +31,7 @@ class ContentPost(models.Model):
   )
   title       = models.CharField(max_length=250)
   slug        = models.SlugField(max_length=250, unique_for_date='publish')
-  author      = models.ForeignKey(User, on_delete=models.CASCADE, related_name='blog_posts')
+  author      = models.ForeignKey(User, on_delete=models.SET_NULL, null=True)
   body        = models.TextField()
   publish     = models.DateTimeField(default=timezone.now)
   created     = models.DateTimeField(auto_now_add=True)
@@ -46,4 +63,5 @@ class Comment(models.Model):
     ordering = ('created',)
 
   def __str__(self):
-    return 'Comment by {} on {}'.format(self.name, self.contentpost)
+    return 'Comment by {} on {}'.format(self.author, self.contentpost)
+ 
