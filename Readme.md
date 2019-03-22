@@ -1,5 +1,7 @@
 # Writrr
 
+<blockquote class="imgur-embed-pub" lang="en" data-id="Fro2z5E"><a href="//imgur.com/Fro2z5E"></a></blockquote><script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script>
+
 
 (https://imgur.com/Fro2z5E)
 
