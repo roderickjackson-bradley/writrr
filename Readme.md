@@ -1,9 +1,6 @@
 # Writrr
 
-<a href="//imgur.com/Fro2z5E"></a>
-
-
-(https://imgur.com/Fro2z5E)
+<blockquote class="imgur-embed-pub" lang="en" data-id="Fro2z5E"><a href="//imgur.com/Fro2z5E">View post on imgur.com</a></blockquote><script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script>
 
 Writrr is a hub to discover, share, and market the creative endeavors that writers produce and enjoy.
 
