@@ -16,18 +16,20 @@ Custom Users.
 
 As a user: I want the “Custom User” view to allow me to see different levels of access on the Writtr app based on role.
 
-The Writer user will have access to list items in the "Shop" view and post new "Opus" entries once they have logged in.
+
+*The Writer user will have access to list items in the "Shop" view and post new "Opus" entries once they have logged in.
 
 
-The Reader will have access to comment on the "opus" entries, rate the "Opus" entries, and select to purchase the "opus" entries if they wish once they have logged in.
+*The Reader will have access to comment on the "opus" entries, rate the "Opus" entries, and select to purchase the "opus" entries if they wish once they have logged in.
 
 
-The Guest will have access to view all "opus" entries uploaded to the app, as well as view the "Writers" information, but cannot interact with the app on "Shop", "Comment", or the "Rate" features.
+*The Guest will have access to view all "opus" entries uploaded to the app, as well as view the "Writers" information, but cannot interact with the app on "Shop", "Comment", or the "Rate" features.
 
 
 A reader or writer will only be able to use the features outlined above by successfully using the "sign-in" button on initial log-in.
 
 A guest can only use the features outlined above after successfully signing-in.
+
 
 
 
