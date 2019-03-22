@@ -25,7 +25,7 @@ The Shop view will allow the user to request to purchase the "Opus" posts that h
 A reader or writer will only be able to use the feature by successfully using the "sign-in" button on initial log-in.
 
 
-Follow us on twitter: @WrittrApp
+Follow us on @twitter: @WrittrApp
 
 ## Features
 ---
