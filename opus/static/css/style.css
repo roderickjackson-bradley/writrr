@@ -1,6 +1,7 @@
 
 .nav-wrapper {
     background-color: #26abf2 !important;
+    background-image: url("https://imgur.com/D6ZnMhG");
     color: whitesmoke;
     font-size: 12px;
     font-family: 'pacifico' , cursive;
@@ -12,17 +13,14 @@
     padding: 0;
 }
 
-header {
-  object-fit: contain;
-}
 
-div.image {
-  content:url(https://imgur.com/TJln8r8);
-}
 
 button {
   border-radius: 80%;
   border-style: outset;
+  background-color: #f48642;
+  color: #26abf2;
+  text-decoration-color: whitesmoke;
 }
 
 a {
@@ -39,14 +37,17 @@ h1 a, h2 a {
     object-fit: contain;
 }
 
-img {
+.image {
   border-radius: 50%;
+  object-fit: contain;
 }
 
 body {
     display: flex;
     min-height: 100vh;
     flex-direction: column;
+    background-image: url("https://imgur.com/a/gSwDkkP");
+    background-attachment: fixed;
     background-color: whitesmoke;
     color: #26abf2;
     font-size: 14px;
