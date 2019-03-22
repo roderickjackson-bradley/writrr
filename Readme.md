@@ -12,13 +12,19 @@ Once at the Writrr's outpost(Oeuvre), the user can rate the original content, en
 
 ## User Stories
 
+Opus.
+
 The “Opus View” will be available on an individual entry for each post by a writer. The Opus view will allow the user to view the writer entry, and leave a comment if I am a “reader”( person who has registered). A reader will also be able to rate the story favorably :) (“Writt.r.Die”) or unfavorably :( (“Writt.r.Sigh”) , and buy that entry if the writer has enabled it for sale by clicking the ("Writt.r.Buy") button/link.
+
+Activity Stream.
 
 The “Activity Stream” will be available for a user who has signed-in as a "Reader" or a "Writer" upon clicking "Log-in" or completion of "Sign-up". The Activity Stream will be the home page, and will allow the user to see "Opus" posts that have been uploaded by Writers.
 
 The "Activity Stream" view will allow the user to click on a writer's "Opus"  entry, and upon clicking, the user will be taken to that "Opus view" until the user decides to navigate away.
 
 A reader or writer will be able to use the feature by clicking the using the "sign-in" button on initial log-in.
+
+Writt.r.Buy (Shop)
 
 The “Shop” view will be available for a user who has signed-in as a "Reader" or a "Writer" upon clicking "Log-in" or completion of "Sign-up", has selected an "Opus" entry, and has clicked on the "Shop" button for that entry.
 
