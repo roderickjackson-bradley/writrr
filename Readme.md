@@ -10,7 +10,7 @@ A journal entry, an article, a book excerpt... the user can interact and purchas
 
 Once at the Writrr's outpost(Oeuvre), the user can rate the original content, engage with the Writrr, browse to see what recommendations they have outside of their own content, purchase items the Writrr has up for sale, or subscribe to premium content the Writrr may offer. 
 
-##User Stories
+## User Stories
 
 The “Opus View” will be available on an individual entry for each post by a writer. The Opus view will allow the user to view the writer entry, and leave a comment if I am a “reader”( person who has registered). A reader will also be able to rate the story favorably :) (“Writt.r.Die”) or unfavorably :( (“Writt.r.Sigh”) , and buy that entry if the writer has enabled it for sale by clicking the ("Writt.r.Buy") button/link.
 
