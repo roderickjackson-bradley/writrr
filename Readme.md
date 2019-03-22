@@ -1,7 +1,5 @@
 # Writrr
 
-https://imgur.com/Fro2z5E
-
 Writrr is a hub to discover, share, and market the creative endeavors that writers produce and enjoy.
 
 A Writrr can recommend or add content that they feel the world should see, giving them a new platform to monetize their work. 
@@ -53,4 +51,12 @@ Follow us on twitter: @WrittrApp
 
 ## Blog Tasks List Story Time line 
 ---
+App link: 
+https://writrrh.herokuapp.com/registration/login/
+
+Team Trello:
+https://trello.com/writrr
+
+Pitch Deck:
+
 [Initial project config setup](https://trello.com/c/wddBANGC/1-initial-project-config-setup)
