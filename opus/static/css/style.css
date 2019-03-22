@@ -5,6 +5,7 @@
     font-size: 12px;
     font-family: 'pacifico' , cursive;
     object-fit: contain;
+    
 }
 
 a {
@@ -12,10 +13,10 @@ a {
 }
 
 h1 a, h2 a {
-    color:#26abf2;
+    color: whitesmoke;
     text-align: inherit;
     text-decoration-color: black;
-    background-color: whitesmoke;
+    background-color: #26abf2;
     font-family: 'Bitter', serif;
     font-size: 20px;
     object-fit: contain;
@@ -29,8 +30,8 @@ body {
     display: flex;
     min-height: 100vh;
     flex-direction: column;
-    color: #26abf2;
-    background-color: #f48642;
+    background-color: #26abf2;
+    color: #ff9858;
     font-size: 14px;
     font-family: 'bitter', serif;
     white-space: normal;
