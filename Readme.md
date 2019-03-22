@@ -12,9 +12,28 @@ Once at the Writrr's outpost(Oeuvre), the user can rate the original content, en
 
 ## User Stories
 
+Custom Users.
+
+As a user: I want the “Custom User” view to allow me to see different levels of access on the Writtr app based on role.
+
+The Writer user will have access to list items in the "Shop" view and post new "Opus" entries once they have logged in.
+
+
+The Reader will have access to comment on the "opus" entries, rate the "Opus" entries, and select to purchase the "opus" entries if they wish once they have logged in.
+
+
+The Guest will have access to view all "opus" entries uploaded to the app, as well as view the "Writers" information, but cannot interact with the app on "Shop", "Comment", or the "Rate" features.
+
+
+A reader or writer will only be able to use the features outlined above by successfully using the "sign-in" button on initial log-in.
+
+A guest can only use the features outlined above after successfully signing-in.
+
+
+
 Opus.
 
-The “Opus View” will be available on an individual entry for each post by a writer. The Opus view will allow the user to view the writer entry, and leave a comment if I am a “reader”( person who has registered). A reader will also be able to rate the story favorably :) (“Writt.r.Die”) or unfavorably :( (“Writt.r.Sigh”) , and buy that entry if the writer has enabled it for sale by clicking the ("Writt.r.Buy") button/link.
+The “Opus View” will be available on an individual entry for each post by a writer. The Opus view will allow the user to view the writer entry, and leave a comment if they finished registration (a Readrr). The user will also be able to rate the story favorably :) (“Writt.r.Die”) or unfavorably :( (“Writt.r.Sigh”) , and buy that entry if the writer has enabled it for sale by clicking the ("Writt.r.Buy") button/link.
 
 
 
