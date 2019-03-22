@@ -1,5 +1,8 @@
 # Writrr
 
+
+![Writtr.](https://imgur.com/Fro2z5E)
+
 Writrr is a hub to discover, share, and market the creative endeavors that writers produce and enjoy.
 
 A Writrr can recommend or add content that they feel the world should see, giving them a new platform to monetize their work. 
